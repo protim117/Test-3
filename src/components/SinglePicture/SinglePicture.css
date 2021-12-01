@@ -1,0 +1,6 @@
+.single-picture{
+    transition: all 1s ease-out;
+}
+.single-picture:hover{
+    transform: scale(1.1);
+}
