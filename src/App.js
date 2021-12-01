@@ -4,7 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import RandomPictures from './components/RandomPicures/RandomPictures';
+import PictureList from './components/PictureList/PictureList';
 import PictureDetails from './components/PicureDetails/PictureDetails';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
           <Routes>
             {/* Home route  */}
-              <Route path="/" element={<RandomPictures/>} />
+              <Route path="/" element={<PictureList/>} />
               {/* Dynamic Route  */}
               <Route path="/picture/:id" element={<PictureDetails/>} />
           </Routes>

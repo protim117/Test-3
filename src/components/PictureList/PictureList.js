@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import SinglePicture from '../SinglePicture/SinglePicture';
 
-const RandomPictures = () => {
+const PictureList = () => {
     const [pictures,setPictures]=useState([]);
     // initial loading is true 
     const[isLoading,setIsLoading]=useState(true);
@@ -61,4 +61,4 @@ const RandomPictures = () => {
     );
 };
 
-export default RandomPictures;<h1>This is random picture</h1>
+export default PictureList;<h1>This is random picture</h1>
