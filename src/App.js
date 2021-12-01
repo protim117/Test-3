@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import RandomPictures from './components/RandomPicures/RandomPictures';
+import PictureDetails from './components/PicureDetails/PictureDetails';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+          <Routes>
+            {/* Home route  */}
+              <Route path="/" element={<RandomPictures/>} />
+              {/* Dynamic Route  */}
+              <Route path="/picture/:id" element={<PictureDetails/>} />
+          </Routes>
+      </BrowserRouter>
     </div>
   );
 }
